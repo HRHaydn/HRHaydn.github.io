@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Haydn Richards - Portfolio</title><!-- Bootstrap Core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Theme CSS -->
+	<link href="../css/freelancer.css" rel="stylesheet"><!-- Custom Fonts -->
+	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body class="index" id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="mainNav">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#page-top">Home</a>
+			</div><!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#dataTypes">Basics of Data Types</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#moore">Moore's Law</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#insideCPU">Inside the CPU</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#moreCPU">Performance</a>
+					</li>
+					<li class="page-scroll">
+						<a href="../theory.html">Back To Theory</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<img alt="" class="img-responsive img-circle" src="../img/dataTypes.png">
+					<div class="intro-text">
+						<span class="name">Data Types</span>
+						<hr class="star-light">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="dataTypes">
+		<div class="container">
+			<h2 class="featurette-heading"> Representing Data Types</h2>
+			<div class="row">
+				<div class="col-lg-12">
+				<p class="lead"><br /><strong>Why do we need data types?</strong><br />
+				A computer needs to know what data type it is storing because they are processed in different ways.  A computer does not have the instinctive ability to recognise the different types of data, so we need to tell them what to do.
+				</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">All data types are stored as binary. The main data types we use:<br />
+					</p>
+					<table class="table pull-right">
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+						<th>Example</th>
+					</tr>
+					<tr class="item">
+						<td>Character</td>
+						<td>Single letter, digit, symbol or control code.</td>
+						<td>S, g, 7, & </td>
+					</tr>
+					<tr class="item">
+						<td>String</td>
+						<td>A string of alphanumeric characters.</td>
+						<td>hat, Fg7tY6, %7&*j </td>
+					</tr>
+					<tr class="item">
+						<td>Boolean</td>
+						<td>One of two values.</td>
+						<td>True or False.</td>
+					</tr>
+					<tr class="item">
+						<td>Integer</td>
+						<td>Whole number values with no decimal part.</td>
+						<td>6, -12, 9, 143</td>
+					</tr>
+					<tr class="item">
+						<td>Real</td>
+						<td>Numbers with decimal or fractional parts.</td>
+						<td>12.3, -18.63, 3.14</td>
+					</tr>
+					</table>
+					<p class="lead"><strong>Representing Text</strong><br>
+					In order for text to be readable by all computer systems, an agreed method of representing characters and strings is important. This is the role of ASCII (American Standard Code for Information Interchange). Originally based on an 8-bit binary pattern using seven bits plus a single parity bit and was able to represent 128 separate characters. The extended version uses 8-bits and can represent 256 separate characters.<br>
+					<br>With the introduction of a need for high amounts of characters, Unicode was introcuced with 16-bits to allow more than 65,000 characters, however even this 16-bit restriction was later removed. The original ASCII table still takes up the first 256 numeric values of Unicode.
+					</p>
+					<hr class="smallSpacer">
+					<img class="img-responsive" src="../img/asciiTable.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h3>School Location</h3>
+						<p>North Halifax Grammar School<br>
+						Moorbottom Road<br>
+						Halifax<br>
+						HX2 9SU</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; Your Website 2016
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+		<a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+	</div><!-- jQuery -->
+	<script src="../vendor/jquery/jquery.min.js">
+	</script> <!-- Bootstrap Core JavaScript -->
+	 
+	<script src="../vendor/bootstrap/js/bootstrap.min.js">
+	</script> <!-- Plugin JavaScript -->
+	 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+	</script> <!-- Contact Form JavaScript -->
+	 
+	<script src="../js/jqBootstrapValidation.js">
+	</script> 
+	<script src="../js/contact_me.js">
+	</script> <!-- Theme JavaScript -->
+	 
+	<script src="../js/freelancer.min.js">
+	</script>
+</body>
+</html>

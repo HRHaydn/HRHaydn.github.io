@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Haydn Richards - Portfolio</title><!-- Bootstrap Core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Theme CSS -->
+	<link href="../css/freelancer.css" rel="stylesheet"><!-- Custom Fonts -->
+	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body class="index" id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="mainNav">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#page-top">Home</a>
+			</div><!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#theCPU">The CPU</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#moore">Moore's Law</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#insideCPU">Inside the CPU</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#moreCPU">Performance</a>
+					</li>
+					<li class="page-scroll">
+						<a href="../theory.html">Back To Theory</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<img alt="" class="img-responsive img-circle" src="../img/cpuImage.png" width="300px">
+					<div class="intro-text">
+						<span class="name">Computer Systems</span>
+						<hr class="star-light">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="theCPU">
+		<div class="container">
+			<h2 class="featurette-heading">The Central Processing Unit (CPU)</h2>
+			<div class="row">
+				<div class="featurette">
+					<div class="smallSpacer"></div><img class="featurette-image img-circle im-responsive pull-right" src="../img/cpuImage2.png" width="400px">
+					<p class="lead">A CPU (or Central Processing Unit) carries out instructions given to it. A CPU is comprised of transistors that can be combined to build logic gates, which in turn build the circuitry inside a processor.<br>
+					<br>
+					The CPU carries out instructions in a series of Fetch, Decode and Execute cycles, where data is retrieved, decoded for instructions and then executed by the CPU.<br>
+					<br>
+					With increasing speeds, smartphones today can have faster processors than those of desktop computers just ten years ago. This is down to Moore's law.</p>
+				</div>
+			</div>
+			<hr class="featurette-divider">
+			<div class="row">
+				<p class="lead"><strong>Clock Speed</strong><br>
+				Processors work at incredibly high speeds, performing cycles of Fetch, Decode and Execute over a billion times in less than a second.<br></p>
+				<table class="table pull-right">
+					<tr>
+						<th>Unit</th>
+						<th>Pulses per Second</th>
+					</tr>
+					<tr class="item">
+						<td>1 Hertz</td>
+						<td>1</td>
+					</tr>
+					<tr class="item">
+						<td>1 Kilohertz</td>
+						<td>1000</td>
+					</tr>
+					<tr class="item">
+						<td>1 Megahertz</td>
+						<td>1000000</td>
+					</tr>
+					<tr class="item">
+						<td>1 Gigahertz</td>
+						<td>1000000000</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	<section class="success" id="moore">
+		<div class="container">
+			<h2 class="featurette-heading">Moore's Law</h2>
+			<div class="row">
+				<div class="smallSpacer"></div>
+				<div class="featurette">
+					<img class="featurette-image img-circle img-responsive pull-right" src="../img/gordonMoore.png" width="300px">
+					<p class="lead"><br>
+					<strong>Gordon Moore</strong>, founder of Intel®, predicted in 1965 that the number of transistors would double approximately every two years. This trend is described as Moore’s Law. Doubling the number os transistors (into the same space) increases the speed of the processor.<br>
+					<br>
+					Although this trend is beginning to show an end as physical limitations begin to become more apparent, there is still evidence of the effects of Moore’s Law as processor speed continues to grow exponentially.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="insideCPU">
+		<div class="container">
+			<h2 class="featurette-heading">Inside The CPU</h2>
+			<div class="featurette">
+				<p class="lead"><br>
+				<strong>What is a register?</strong><br>
+				A register is a memory location within the CPU.<br>
+				The registers themselves are extremely fast and can be used without causing a bottleneck (the slowest part of the system that limits the speed as a whole).</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<p class="lead"><br>
+						<br>
+						<strong>Program Counter:</strong><br>
+						Keeps track of the memory location of the line of machine code being executed. It gets incremented to point to the next instruction, with each cycle of the fetch-decode-execute cycle allowing the program to be executed in sequence one by one.<br>
+						The program counter is also affected by instructions which alter the flow of control - for example LMC has BRZ, BRP and BRA.<br>
+						<br>
+						<strong>Memory Data Register (MDR):</strong><br>
+						Stores the data that has been fetched from or stored in memory.<br>
+						<br>
+						<strong>Memory Address Register (MAR):</strong><br>
+						Stores the address of the data or instructions that are to be fetched from or sent to.<br>
+						<br>
+						<strong>Current Instruction Register (CIR):</strong><br>
+						Stores the most recently fetched instructions, waiting to be decoded and executed.<br>
+						<br>
+						<strong>Accumulator (ACC):</strong><br>
+						Stores the results of calculations made by the ALU.<br>
+						<br>
+						<strong>General Purpose Registers:</strong><br>
+						Processors can also have general purpose registers, which can temporarily store data rather than sending data to and from the comparatively much slower memory.</p>
+					</div>
+					<div class="col-lg-6">
+						<p class="lead"><br>
+						<br>
+						<strong>Buses:</strong><br>
+						Buses are communications channels through which data can be sent around the computer. There are three buses inside the computer we need to consider:<br>
+						<strong>Data Bus</strong> - carries data between the processor and memory.<br>
+						<strong>Address Bus</strong> - carries the address of the memory location being read from or written to.<br>
+						<strong>Control Bus</strong> - sends control signals from the control unit.<br>
+						<br>
+						<br>
+						<strong>Arithmetic Logic Unit (ALU):</strong><br>
+						Carries out calculations and logical decisions. Results are stored in the accumulator.<br>
+						<br>
+						<strong>Control Unit (CU):</strong><br>
+						Sends out signals to coordinate how the processor works. It controls the how data moves around parts of the CPU and how it moves between the CPU and memory. Instructions are decoded in the control unit.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="success" id="moreCPU">
+		<div class="container">
+			<h2 class="featurette-heading">Improving CPU performance</h2>
+			<div class="smallSpacer"></div>
+			<div class="featurette">
+				<img class="img-responsive featurette-image pull-right" src="../img/dataPyramid.png">
+				<p class="lead"><strong>Cache Memory</strong><br>
+				RAM is faster when compared to the speed of secondary storage, however it is still slower in comparison the CPU - making RAM a bottleneck in the speed at which processor can operate.<br>
+				To improve upon this, a small amount of fast memory is built into the processor itself reducing the distance data has to travel - this is Cache Memory. By anticipating regularly used data and moving them to Cache, the overall speed of the processor can be improved. As well as being expensive however, larger sizes of cache work slower and therefore often modern computers have multiple levels of cache.</p>
+			</div>
+			<div class="smallSpacer"></div>
+			<div class="featurette">
+				<img class="img-responsive featurette-image pull-left" src="../img/coresCPU.png" width="500px">
+				<p class="lead"><strong>Multiple Cores:</strong><br>
+				A CPU can have multiple cores, the most common being “dual core” and “quad core” processors. Each core is a distinct processing unit on the CPU, as well as having its own cache the cores also share a higher-level cache that works directly with RAM.<br>
+				When multitasking, each core can work on different applications. Through parallel processing it is also possible for multiple cores to work on the same task. Four cores does not mean the processor will work four times as fast.</p>
+			</div>
+			<div class="smallSpacer"></div>
+			<div class="featurette">
+				<p class="lead"><strong>Pipelining:</strong><br>
+				Pipelining is a method used within processors, with one instruction being executed, the next instruction being decoded all while the the one after being fetched from memory. 
+				Sometimes it is not able to be accurate when predicting what instruction needs to be fetched and decoded next. For example we might need to branch to another instruction. This is called flushing the pipeline. 
+				The more we have to the flush the pipeline, the less benefit pipelining gives us. <br><br>
+				Imagine a manual car wash: one person fetches the water, another cleans the car and finally someone rinses the car off. </p>
+				<table class="table">
+							<tr>
+								<th></th>
+								<th>Fetch Water</th>
+								<th>Clean Car</th>
+								<th>Rinse Off</th>
+							</tr>
+							<tr class="item">
+								<td>Step One</td>
+								<td>Car One</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="item">
+								<td>Step Two</td>
+								<td>Car Two</td>
+								<td>Car One</td>
+								<td></td>
+							</tr>
+							<tr class="item">
+								<td>Step Three</td>
+								<td>Car Three</td>
+								<td>Car Two</td>
+								<td>Car One</td>
+							</tr>
+							<tr class="item">
+								<td>Step Four</td>
+								<td>Car Four</td>
+								<td>Car Three</td>
+								<td>Car Two</td>
+							</tr>
+						</table>
+			</div>
+			<div class="smallSpacer"></div>
+			<div class="featurette">
+				<img class="img-responsive featurette-image pull-right img-circle" src="../img/gpuImage.png" width="300px">
+				<p class="lead"><strong>Graphics Processing Unit (GPU):</strong><br>
+				A GPU is a processing unit specifically designed to perform calculations associated with graphics. 
+				They have instruction sets specifically designed for the sorts of calculations required in graphics processing. <br>
+				Often when rendering graphics, the same process needs to be performed for multiple points on the screen. To speed this up, a GPU has the ability to process these data in parallel; what is referred to as single instruction multiple data (SIMD). 
+				<br><br>Uses of GPUs include: modelling physical systems, audio processing, breaking passwords and machine learning.
+				</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="input">
+		<div class="container">
+			<h2 class="featurette-heading">Input, Output, Storage and Memory</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead"><strong>Input and Output Devices</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h3>School Location</h3>
+						<p>North Halifax Grammar School<br>
+						Moorbottom Road<br>
+						Halifax<br>
+						HX2 9SU</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; Your Website 2016
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+		<a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+	</div><!-- jQuery -->
+	<script src="../vendor/jquery/jquery.min.js">
+	</script> <!-- Bootstrap Core JavaScript -->
+	 
+	<script src="../vendor/bootstrap/js/bootstrap.min.js">
+	</script> <!-- Plugin JavaScript -->
+	 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+	</script> <!-- Contact Form JavaScript -->
+	 
+	<script src="../js/jqBootstrapValidation.js">
+	</script> 
+	<script src="../js/contact_me.js">
+	</script> <!-- Theme JavaScript -->
+	 
+	<script src="../js/freelancer.min.js">
+	</script>
+</body>
+</html>
