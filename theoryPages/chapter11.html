@@ -12,6 +12,7 @@
 	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 </head>
 <body class="index" id="page-top">
 	<!-- Navigation -->
@@ -19,7 +20,7 @@
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header page-scroll">
-				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#page-top">Home</a>
+				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#page-top">Chapter 11</a>
 			</div><!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -28,6 +29,9 @@
 					</li>
 					<li class="page-scroll">
 						<a href="#dataTypes">Basics of Data Types</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#binary">Binary Integers</a>
 					</li>
 					<li class="page-scroll">
 						<a href="../theory.html">Back To Theory</a>
@@ -101,10 +105,143 @@
 					</p>
 					<hr class="smallSpacer">
 					<img class="img-responsive" src="../img/asciiTable.png">
+					<hr class="smallSpacer">
+					<p class="lead"><br><strong>Boolean Data</strong><br>
+					Boolean is a data type that can only be one of two values: True or False, using 1 represent True and 0 to represent False. The data only requires one bit but is often stored in a byte for convenience. Boolean data types are often used to flag if an event has occurred. 
+					</p>
+					</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="binary" class="success">
+		<div class="container">
+			<h2 class="featurette-heading">Representing Integers in Binary</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead"><br><strong>Positive Integers</strong><br><br>
+					When we write a number in base 10 (otherwise denary), we simply combine a quantity of 1's, 10's, 100's and so on to represent the value. In base 2 (otherwise known as binary), the collumns are based on 2 rather than 10.
+					</p>
+					<table class="table">
+						<tr class="item">
+							<th>Column Value</th>
+							<th>128</th>
+							<th>64</th>
+							<th>32</th>
+							<th>16</th>
+							<th>8</th>
+							<th>4</th>
+							<th>2</th>
+							<th>1</th>
+						</tr>
+						<tr class="item">
+							<td>Binary Number</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</table>
+					<p class="lead">
+					So the binary number 10011011 is the equivalent of 128+16+8+2+1 = 155 in denary.<br>
+					</p>				
+				</div>
+			</div>
+			<hr class="smallSpacer">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead"><strong>Negative Integers</strong><br>
+					With negative integers, there are two approaches to representing a negative value. These are "Sign and Magnitude" and "Two's complement".
+					<br><br>
+					<strong>Sign and Magnitude:</strong><br>
+					In this approach, the most significant bit (MSB) is used to store the binary value of either 0 for positive or 1 for negative. 
+					<br>For example the binary value for negative 46 is shown below:</p>
+					<table class="table">
+						<tr>
+							<th>Column Value</th>
+							<th>Sign Bit</th>
+							<th>64</th>
+							<th>32</th>
+							<th>16</th>
+							<th>8</th>
+							<th>4</th>
+							<th>2</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+					</table>
+					<p class="lead">
+					This produces the binary value of 10101110 in an 8 bit arrangement. 
+					</p>
+					<div class="smallSpacer" />
+					<p class="lead">
+					<strong>Two's complement:</strong><br>
+					While the above method is fine, the processing required is quite complicated so there is a better approach. This is to make the MSB a negative value.
+					<br>This produces these new headings:<br>
+					</p>
+					<table class="table">
+						<tr>
+							<th>Column Value</th>
+							<th>-128</th>
+							<th>64</th>
+							<th>32</th>
+							<th>16</th>
+							<th>8</th>
+							<th>4</th>
+							<th>2</th>
+							<th>1</th>
+						</tr>
+					</table>
+					<div class="smallSpacer" />
+					<p class="lead">
+					To produce the value of -103 we record -128 + 25 or:
+					</p>
+
+					<table class="table">
+						<tr>
+							<th>Column Value</th>
+							<th>-128</th>
+							<th>64</th>
+							<th>32</th>
+							<th>16</th>
+							<th>8</th>
+							<th>4</th>
+							<th>2</th>
+							<th>1</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1</td>
+						</tr>
+					</table>
+					<p class="lead">
+					This produces the binary number 10011001.
 				</div>
 			</div>
 		</div>
 	</section>
+	
 	
 	
 <!-- Footer -->

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Haydn Richards - Portfolio</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Theme CSS -->
+      <link href="../css/freelancer.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+   </head>
+   <body id="page-top" class="index">
+   
+      <!-- Navigation -->
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+               </button>
+               <a class="navbar-brand" href="#page-top">Chapter 2</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                     <a href="#page-top"></a>
+                  </li>
+                  <li class="page-scroll">
+                     <a href="#methods">Methods and Models</a>
+                  </li>
+				  <li class="page-scroll">
+					<a href="#abstraction">Abstraction</a>
+				  </li>
+				  <li class="page-scroll">
+					<a href="#thinking">Thinking Computers</a>
+				  </li>
+                  <li class="page-scroll">
+                     <a href="../theory.html">Back To Theory</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+	  
+	  <header>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <img class="img-responsive img-circle" src="../img/chapter2MainImage.png" alt="" width="300px">
+                  <div class="intro-text">
+                     <span class="name">Computational Thinking</span>
+                     <hr class="star-light">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+	  
+	  <section id="methods">
+		<div class="container">
+			<h2 class="featurette-heading">Computational Methods and Models</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead"><br><br><strong>Backtracking</strong><br /><br />
+					An algorithmic approach to a problem where solutions to a larger problem are incremently built up as a pathway to follow, and then, if the pathway fails at some point, the the partial solutions are abandoned and the search begins again at the last point that was potentially successful.
+					</p>
+				</div>
+			</div>
+				<div class="featurette">
+					<p class="lead"><br><strong>Data Mining</strong><br>
+					</p>
+					<img class="img-responsive featurette-image pull-right" src="../img/dataMining.png" width="400px">
+				
+					<p class="lead">
+					A process for trawling through lots of data that probably comes from many sources. It is useful way to search for relationships and facts that are probably not immediately obvious to a casual observer.<br>
+					Algorithms that help with data mining are known by such terms as 'pattern matching' and 'anomaly detection'.<br>
+					Data mining has become possible because of
+					</p>
+					<li class="lead">
+						big databases
+					</li>
+					<li class="lead">
+						fast processing
+					</li>
+					<p class="lead">
+					
+					Data mining is useful for many purposes, such as business modelling and planning as well as even disease preiction. This is an amazing aspect of computability that would not have been forseen in 1936.
+					</p>
+					</div>
+				<div class="row">
+					<div class="col-lg-12">
+					<p class="lead"><br><strong>Performance Modelling</strong><br><br>
+					We often want to know how well a system will perform in real life before we have implemented it. It is not feasible to test all possibilities for reasons such as:
+					<li class="lead">
+						safety
+					</li>
+					<li class="lead">
+						time
+					</li>
+					<li class="lead">
+						expense
+					</li>
+					<p class="lead">
+					The sensible thing to do is to build models or simulations in porder to best predict the outcomes. Producing computer models is one of the most imporant uses of computers and is apart of computational thinking.
+					</p>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-12">
+					<p class="lead"><br><strong>Pipelining</strong><br><br>
+					Pipelining is a situation where the output of one process is the input of another.<br>
+					RISC architecture is often linked with pipelining. While one instruciton is being fetched, another is being decoded and another executed. This is queueing and does have its drawbacks in the form of flushing the pipeline. This is where an interrupt takes place and takes priority, meaning the pipelining needs to be reset.<br>
+					</p>
+				</div>
+				</div>
+				<div class="featurette">
+					<p class="lead"><br><strong>Visualisation</strong><br></p>
+					<img class="img-responsive featurette-image pull-right" src="../img/visualisation.png" width="500px">
+					<p class="lead">
+					Visualisation is a common computing technique to present data in an easy-to-grasp form. The benefit of visualisation is really shown when tables of data can be shown visually in images and graphs that allow patterns to be easily observed. 
+					</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	  </section>
+	  
+	  <section id="abstraction" class="success">
+		<div class="container">
+			<h2 class="featurette-heading">Abstraction</h2>
+			<div class="row">
+				<div class="col-lg-12">
+				<p class="lead"><br><strong>What is abstraction?</strong><br><br>
+				This is the process by which what does matter is brought out and what doesn't is discarded in a scenario. <br>
+				Abstraction helps us to maximise our chances of solving a problem by letting us separate out the component parts and decide which are worth developing with more detail.
+				<br><br>
+				<strong>Abstraction and real-world issues</strong><br><br>
+				Abstraction is extremely important in computing. Every program worth thinking about uses variables. Variables are an abstraciton of real world values or itermediate values in calculations.<br>
+				Classes and objects in object oriented programming are another example of abstraction on a higher level.
+				<br><br>
+				<strong>Levels of abstraction</strong><br><br>
+				In a complex system, it is often useful to construct an abstractipon to represent a large problem and to create lower-level abstractions to deal with component parts.<br>
+				The power in this approach is the details in each layer of abstraction can be hidden from the others allowing concentration on just one issue at a time. <br>
+				This idea of levels is called layering and is found widely in large systems such as Operating Systems, Databases and Networking. Layers are a way of dividing the functionality of a big system into separate areas of interest.
+				</p>
+				</div>
+			</div>
+		</div>
+	  </section>
+	  
+	  <section id="thinking">
+		<div class="container">
+			<h2 class="featurette-heading">Thinking Computationally</h2>
+			<div class="row">
+				<div class="col-lg-12">
+				<p class="lead"><br><br><strong>Thinking Ahead</strong><br>
+				In computing, when we refer to planning and thinking ahead we refer to inputs and output. It is useful to apply this approach to other problems as well.<br><br>
+				<strong>Inputs and Outputs</strong><br>
+				When planning a computer system, one of the first things an analyst needs to do is to determine what outputs are needed, after all the entire purpose of a computer system is to have and retrieve output. This use of determining outputs leads to information of required inputs and thus planning ahead in a computer system.<br><br>
+				<strong>Caching</strong><br>
+				This is another illustration of thinking ahead in computer systems. Data that is likely to be needed is anticipitated and stored in a temporary store, ready for fast access. Cached data can replace the need for recalculation or slow access of data stored online or on an external storage device.<br><br>
+				<br><strong>Thinking Procedurally</strong><br>
+				Computers are written and designed in modules of code and essential components.<br>
+				When writing programs, we generally think of algorithms expressed as sequences of instructions which are often packaged up into modules for ease of writing.<br>
+				</p>
+				<ul class="lead">
+				<li>
+				Divide up a problem into sub-problems
+				</li>
+				<li>
+				Do solutions already exist for any of the sub-problems?
+				</li>
+				<li>
+				How do the sub-problems interact with each other?
+				</li>
+				</ul>
+				</p>
+				<p class="lead">
+				<br><strong>Thinking Logically</strong><br>
+				When we think logically, we have to infer knowledge. In programming it requires understanding where decisions need to be made and their consequences.<br>
+				To think logically when solving a problem, it is necessary to:
+				</p>
+				<ul class="lead">
+				<li>
+				identify when decision making is required
+				</li>
+				<li>
+				identify what decisions need to be made 
+				</li>
+				<li>
+				identify the test conditions to enable a decision to be made 
+				</li>
+				<li>
+				understand the interactions between decisions 
+				</li>
+				<li>
+				apply decision making to the real-world problems
+				</li>
+				</ul>
+				<p class="lead">
+				<br><strong>Thinking Concurrently</strong><br>
+				Sometimes it can be more efficient to do some parts of a task together at the same time. This is the idea of concurrently approaching a problem and can affect the algorithms created. This links in to hardware such as parallel processing and other forms of problem solving in computer science.
+				</p>
+				</div>
+			</div>
+		</div>
+	  </section>
+	  
+	  	  	  
+	        <!-- Footer -->
+      <footer class="footer">
+         <div class="footer-above">
+            <div class="container">
+               <div class="row">
+                  <div class="text-center">
+                     <h3>School Location</h3>
+                     <p>North Halifax Grammar School
+                        <br />Moorbottom Road
+                        <br />Halifax
+                        <br />HX2 9SU
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-below">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     Copyright &copy; Your Website 2016
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+      <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+         <a class="btn btn-primary" href="#page-top">
+         <i class="fa fa-chevron-up"></i>
+         </a>
+      </div>	  
+	  
+      <!-- jQuery -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <!-- Contact Form JavaScript -->
+      <script src="../js/jqBootstrapValidation.js"></script>
+      <script src="../js/contact_me.js"></script>
+      <!-- Theme JavaScript -->
+      <script src="../js/freelancer.min.js"></script>
+   </body>
+</html>
