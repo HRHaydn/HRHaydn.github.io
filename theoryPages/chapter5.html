@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Haydn Richards - Portfolio</title>
+      <!-- Bootstrap Core CSS -->
+      <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Theme CSS -->
+      <link href="../css/freelancer.css" rel="stylesheet">
+      <!-- Custom Fonts -->
+      <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+      <!-- Custom JavaScript -->
+      <script src="http://www.w3schools.com/lib/w3.js"></script>
+   </head>
+   <body id="page-top" class="index">
+   
+      <!-- Navigation -->
+      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+         <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+               </button>
+               <a class="navbar-brand" href="#page-top">Chapter 5</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                     <a href="#page-top"></a>
+                  </li>
+				  <li class="page-scroll">
+                     <a href="#searchsort">Search and Sort</a>
+                  </li>
+				  <li class="page-scroll">
+					<a href="../theory.html">Back to Theory</a>
+				  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+	  
+	  <header>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <img class="img-responsive img-circle" src="../img/algorithm.jpg" alt="">
+                  <div class="intro-text">
+                     <span class="name">Algorithms</span>
+                     <hr class="star-light">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+	  
+	  <section id="searchsort">
+		<div class="container">
+			<h2 class="featurette-heading">Search and Sort Algorithms</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br><br><strong>Search Algorithms</strong>
+					<br>There are two main types of search algorithms: Linear search and Binary search.
+					<br><br>Linear search involves moving from item to item in a list and checking if the item is the desired one. If its not then carry on moving until you reach the end. The search is the simplest you can get. The benefit of this longer search is that it can work with an unsorted list.
+					<br>
+					<br>Binary search works by dividing the list in two and seeing if the wanted value is in the upper half or lower half. This continues until the wanted value is found. This process is a lot faster than the linear search with larger lists, however the list needs to be sorted. 
+					<br><br>
+					</p>
+					<img class="img-responsive centre" style="margin: 0 auto" src="../img/linearbinarysearch.gif">
+					<div class="smallSpacer" />
+				</div>
+				<div class="col-lg-12">
+					<p class="lead"><strong>Sorting Algorithms</strong>
+					<br>As demonstrated by the binary search, in order to do various other operations with data, the set must first be sorted. The ones that will be covered are bubble sort, insertion sort, merge sort and quick sort. 
+					</p>
+					<img class="featurette-image img-responsive pull-right" src="../img/bubbleSort.gif" width="400px" >
+					<p class="lead">
+					<br>The first sorting technique is the bubble sort. This sorting method works by moving through the set of data, and compares the current element to the next element, switching positions if the first is larger. This in turn moves the largest element to the end, then on the next cycle the second largest, continuing onwards until the set is sorted.
+					<br>This method is the easiest sorting method to understand and implement, however it is very inefficient compared to alternatives.
+					</p>
+				</div>
+				<div class="col-lg-12">
+					<img class="featurette-image img-responsive pull-right" src="../img/insertionSort.gif" width="400px">
+					<p class="lead">
+					<br>Another method of sorting is the insertion sort. This sort works by taking an item from an unsorted part of the list, comparing it to two items already sorted and inserting it into its correct positioning. This method is then repeated until the list is sorted.
+					</p>
+				</div>
+				<div class="col-lg-12">
+					<img class="featurette-image img-responsive pull-right" style="margin: 12px" src="../img/mergeSort.gif" width="400px">
+					<p class="lead">
+					<br>Alternatively there is merge sort. Merge sort involves a technique revolving around divide and conquer. Merge sort first begins by breaking down a list into a set of lists containing one element. It then builds up these lists into one single list in an ordered format.
+					</p>
+				</div>
+				<div class="col-lg-12">
+					<img class="featurette-image img-responsive pull-right" style="margin: 12px" src="../img/quickSort.gif" width="400px">
+					<p class="lead">
+					<br>The final sorting algorithm that will be discussed is Quicksort. This algorithm works by using described “pivots”. A list is taken and the starting element put into a single list containing itself. Split the remainder of the list into two sublists, those greater and those less than or equal to the pivot. From this recursively split the sublists until they are all pivots. Combine the remaining pivots to generate a sorted list.
+					</p>
+				</div>
+			</div>
+		</div>
+	  </section>
+	  
+	  <section class="success" id="complexity">
+		<div class="container">
+			<h2 class="featurette-heading">Complexity</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br>When we talk about differences between algorithms, we can evaluate their efficiency by how long they take to execute and how much memory they use. However in the ever evolving computing industry, computers are roughly doubling in processing power every 18 months. With this in mid there needs to be a more useful way to compare algorithms in their complexity.
+					<br><br>This is achieved with the Big-O notation. It is written as O(x) where x is the worst case scenario. We are not bothered about values with the complexity, as it is the scaling that we are concerned about. 
+					<br>There are 5 kinds of complexity that will be covered. 
+					<br><br><strong>Constant complexity O(1)</strong>
+					<br>This is where the complexity is constant. No matter the size of the data set, the time taken or memory used is constant. Take for example removing the first item from a list, no matter the size of the list, it will take the same time. 
+					<br><br><strong>Linear complexity O(n)</strong>
+					<br>Algorithms with linear complexity increase at the same rate as the input size increases. An example of this is the average time taken to find an item using linear search, hence the name.
+					<br><br><strong>Exponential complexity O(n^k) (where k>1)</strong>
+					<br>These do not scale well at all. This means that as the data size increases, the rate at which the time increases gets larger. An example of this type of complexity would be the bubble sort.
+					<br><br><strong>Logarithmic complexity O(logn)</strong>
+					<br>Logarithms put simply are the opposite of exponentials, meaning the rate by which they increase is reduced as the data size gets larger. Therefore they scale the best with an increasing data size. An example of this type of complexity would be the binary search.					
+					</p>
+					<img class="img-responsive centre" style="margin: 0 auto" src="../img/bigO.jpg">
+				</div>
+			</div>
+		</div>
+	  </section>
+	  
+	  <section id="shortest">
+		<div class="container">
+			<h2 class="featurette-heading">Shortest-path Algorithms</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br>Say we wanted to reach a destination in the fastest time, moving from point to point. If we wanted to take the fastest route, how would we go about finding this pathway. There are two methods that will be discussed for this: Dijkstra's algorithm and A* algorithm.
+					<br><br><strong>Dijkstra's Algorithm works by first selecting the starting node. 
+					</p>
+				</div>
+			</div>
+		</div>
+	  </section>
+  
+	  	  
+	        <!-- Footer -->
+      <footer class="text-center">
+         <div class="footer-above">
+            <div class="container">
+               <div class="row">
+                  <div class="text-center">
+                     <h3>School Location</h3>
+                     <p>North Halifax Grammar School
+                        <br />Moorbottom Road
+                        <br />Halifax
+                        <br />HX2 9SU
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-below">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     Copyright &copy; Your Website 2016
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+      <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+         <a class="btn btn-primary" href="#page-top">
+         <i class="fa fa-chevron-up"></i>
+         </a>
+      </div>	  
+	  
+      <!-- jQuery -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Plugin JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <!-- Contact Form JavaScript -->
+      <script src="../js/jqBootstrapValidation.js"></script>
+      <script src="../js/contact_me.js"></script>
+      <!-- Theme JavaScript -->
+      <script src="../js/freelancer.min.js"></script>
+   </body>
+</html>
