@@ -40,6 +40,12 @@
                      <a href="#searchsort">Search and Sort</a>
                   </li>
 				  <li class="page-scroll">
+					<a href="#complexity">Complexity</a>
+				  </li>
+				  <li class="page-scroll">
+					<a href="#shortest">Shortest Route</a>
+				  </li>
+				  <li class="page-scroll">
 					<a href="../theory.html">Back to Theory</a>
 				  </li>
                </ul>
@@ -140,7 +146,24 @@
 				<div class="col-lg-12">
 					<p class="lead">
 					<br>Say we wanted to reach a destination in the fastest time, moving from point to point. If we wanted to take the fastest route, how would we go about finding this pathway. There are two methods that will be discussed for this: Dijkstra's algorithm and A* algorithm.
-					<br><br><strong>Dijkstra's Algorithm works by first selecting the starting node. 
+					<br><br><strong>Dijkstra's Algorithm</strong>
+					<br>This works by first selecting the starting node. Then selecting the node with the shortest distance from this node, and moving to it. If the shortest distance is then a node previous to this node then it moves back to the previous node. This continues until the shortest distance is found.
+					</p>
+					<img class="featurette-image img-responsive" style="margin: 0 auto" src="../img/shortestPath.gif">
+				</div>
+				<div class="col-lg-12">
+					<p class="lead">
+					<br><br><strong>A* Algorithm</strong>
+					<br>This algorithm is different to Dijkstra's algorithm in the sense it makes use of heuristics (past experiences used to form a judgement).
+					<br><br>Set start node to current node:
+					<br>WHILE we have not completely visited the destination node:
+					<br>&emsp;FOR each open node directly connected to the current node:
+					<br>&emsp;&emsp;Add to the list of open nodes
+					<br>&emsp;&emsp;Add the distance from the start to the heuristic estimate of distance left
+					<br>&emsp;&emsp;Assign this value to the node
+					<br>&emsp;NEXT connected node
+					<br>&emsp;Make the unvisited node with the lowest value the current node
+					<br>ENDWHILE
 					</p>
 				</div>
 			</div>
