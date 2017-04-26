@@ -28,10 +28,19 @@
 						<a href="#page-top"></a>
 					</li>
 					<li class="page-scroll">
-						<a href="#dataTypes">Basics of Data Types</a>
+						<a href="#dataTypes">Data Types</a>
 					</li>
 					<li class="page-scroll">
-						<a href="#binary">Binary Integers</a>
+						<a href="#binary">Binary</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#hex">Hex</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#images">Images</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#sound">Audio</a>
 					</li>
 					<li class="page-scroll">
 						<a href="../theory.html">Back To Theory</a>
@@ -44,7 +53,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img alt="" class="img-responsive img-circle" src="../img/dataTypes.png">
+					<img alt="" class="img-responsive img-circle" src="../img/dataTypes.png" width="300px">
 					<div class="intro-text">
 						<span class="name">Data Types</span>
 						<hr class="star-light">
@@ -237,6 +246,196 @@
 					</table>
 					<p class="lead">
 					This produces the binary number 10011001.
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="hex">
+		<div class="container">
+			<h2 class="featurette-heading">Hexadecimal</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br>Computers do not work in hexadecimal (base 16), but the relationship with binary (base 2) makes it easier for us as the programmers to understand and express long binary numbers in a more familiar and rememberable way.
+					<br>In base 16 the column values are as below:
+					<br><br>
+					</p>
+					<table class="table">
+						<tr>
+							<th>Column Value</th>
+							<th>4096 = 16^3</th>
+							<th>256 = 16^2</th>
+							<th>16 = 16^1</th>
+							<th>16 = 16^0</th>
+						</tr>
+					</table>
+					
+					<p class="lead">
+					<br><br>Hexadecimal extends to 15 in single units and as such we need a single character such as 5 to represent 10 to 15. As such we use the alphabet for simplicity.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<table class="table">
+						<tr>
+							<th>Denary Value</th>
+							<th>Hexadecimal Value</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>8</td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-lg-6">
+					<table class="table">
+						<tr>
+							<th>Denary Value</th>
+							<th>Hexadecimal Value</th>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>A</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>B</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>C</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>D</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>E</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>F</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br><br><strong>Special Relationship</strong>
+					<br>When we represent large binary numbers such as 1000110011101111 we can easily convert them to hexadecimal. We start by first dividing them into nibbles (4-bits).
+					</p>
+					<table class="table">
+						<tr>
+							<td>1000</td>
+							<td>1100</td>
+							<td>1110</td>
+							<td>1111</td>
+						</tr>
+					</table>
+					<p class="lead">
+					<br>We then take each binary nibble and represent it with the corresponding hexadecimal value.
+					</p>
+					<table class="table">
+						<tr>
+							<td>1000</td>
+							<td>1100</td>
+							<td>1110</td>
+							<td>1111</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>9</td>
+							<td>A</td>
+							<td>B</td>
+					</table>
+					<p class="lead">
+					<br>By then taking these characters and simply slotting them together, we have correctly represented the binary number 1000110011101111 as 89AB in hex.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="success" id="images">
+		<div class="container">
+		<h2 class="featurette-heading">Images</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br><strong>Pretty Pixels</strong>
+					<br>Everything in a computer and all its data must be represented in 1's and 0's and this is true even for images. Take for example a simplistic black and white image:
+					</p>
+					<img class="img-responsive" style="margin: 0 auto" src="../img/pixels.png">
+					<p class="lead">
+					<br>Each colour of an image is stored as a binary number. In the black-and-white image above, each pixel is either black or white. 
+					<br>You need a binary value for each different colour. As each pixel is either black or white, this image can be encoded with a value of 0 for white and 1 for black.
+					<br>If we used two bits for each pixel then we could store 2^2 = 4 colours. For three bits 2^3 = 8 colours ,eight bits 2^8 = 256 colours and on and on. 
+					<br>The number of bits used for each dot/pixel is referred to as the colour depth. 
+					<br><br>A common misconception is that resolution is size of the image. For example a 500x500 image. However resolution is in fact the number of pixels or dots per unit. This is given the unit dpi (dots per inch) or ppi (pixels per inch).
+					<br><br>With all this information about the resolution and colour depth it can be useful to store it so that we can look it up if needs be. The data about data is called metadata. 
+					<br><br><strong>Bitmaps</strong>
+					<br>Bitmap images are widely used on digital cameras, smartphones and online. Common bitmap image file types include JPEG, GIF and PNG. Bitmaps are also known as pixelmaps or raster graphics.
+					<br>When zooming in or enlarging a bitmap image, the pixels are stretched and made into larger blocks. This is why bitmap images appear as poor quality when enlarged too much.
+					<br><br><strong>Vectors</strong>
+					<br>A vector image uses scalable shapes such as straight lines and curves, using coordinates and geometry to precisely define the parts of the image. It is more efficient than bitmaps at storing large areas of the same colour because it does not need to store every pixel as a bitmap does.
+					<br><br>Vector graphics can be scaled without losing resolution. They can be enlarged or reduced in size - but the file size will stay almost exactly the same.
+					<br>One of the most common vector file formats is scalable vector graphics (SVG). SVG is an open standard for vector graphics.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="sound">
+		<div class="container">
+			<h2 class="featurette-heading">Audio</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br>Sound itself is a continuously varying (analogue) data. However if we want to store it in a computer it must be converted to binary (digital) data. 
+					<br>The analogue sound data is sampled at set intervals and the values that are sampled are used to represent the sound in digital format. 
+					</p>
+					<img class="img-responsive" style="margin: 0 auto" src="../img/soundWave.png">
+					<p class="lead">
+					<br>The sample rate determines the quality of the sound rerecorded. This is how often we take a sample in a given time. The more samples, the closer the digital sound is to the original analogue sound, however more data will be required.
+					<br><br>Another factor is the accuracy of the values. The bit rate is the number of bits per given time period available for each sample measured in kilobits per second. 
+					</p>
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Haydn Richards - Portfolio</title><!-- Bootstrap Core CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><!-- Theme CSS -->
+	<link href="../css/freelancer.css" rel="stylesheet"><!-- Custom Fonts -->
+	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+</head>
+<body class="index" id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-custom" id="mainNav">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i></button> <a class="navbar-brand" href="#page-top">Chapter 11</a>
+			</div><!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#add">Integer Add/Sub</a>
+					</li>
+					<li class="page-scroll">
+						<a href="../theory.html">Back To Theory</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<img alt="" class="img-responsive img-circle" src="../img/abacus2.png" width="300px">
+					<div class="intro-text">
+						<span class="name">Computing Arithemtic</span>
+						<hr class="star-light">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section id="add">
+		<div class="container">
+			<h2 class="featurette-heading">Binary Arithmetic</h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead">
+					<br><strong>Adding Binary Numbers</strong>
+					<br>When we add in binary, it is very similar to addition in denary or any other number system. We add the contents in the first to the contents in the second column, if it exceeds we carry on a one.
+					<br>Below is an example:
+					</p>
+					<img class="img-responsive featurette-image pull-left" src="../img/binaryAddition.png">
+					<p class="lead">
+					<br>When we add the two numbers here we can see it exceeds the original 5-bits. If we were told to express this addtion in just 5-bits we would experience an overflow error, as 6-bits are required to store the information.
+					<br><br>
+					</p>
+					<p class="lead">
+					<br><strong>Subtracting Binary Numbers</strong>
+					<br>Again similarly to subtraction in denary, binary involved taking away two numbers and carrying a value across if we can't subtract.
+					<br>Below is an example:
+					</p>
+					<img class="img-responsive featurette-image pull-left" src="../img/binarySubtraction.png">
+					<p class="lead">
+					<br>As seen by these examples, when subtracting numbers, if we try to take 1 away from 0, we cannot. Therefore we borrow and move along a 1 from further to the left in order to complete the subtraction.
+					<br><br>
+					</p>
+					<p class="lead">
+					<strong>Questions:</strong>
+					</p>
+					<ol class="lead">
+						<li>
+						10100110 + 110011 = ?
+						</li>
+						<li>
+						1111 + 1001 = ?
+						</li>
+						<li>
+						10010 - 1011 = ?
+						</li>
+						<li>
+						10000 - 1111 = ?
+						</li>
+						<li>
+						10101010 - 10111 = ?
+						</li>
+					</ol>
+					<p class="lead">
+					<br><strong>Answers:</strong>
+					</p>
+					<ol class="lead">
+						<li>
+						10100110 + 110011 = 11011001 
+						</li>
+						<li>
+						1111 + 1001 = 11000
+						</li>
+						<li>
+						10010 - 1011 = 0111
+						</li>
+						<li>
+						10000 - 1111 = 00001
+						</li>
+						<li>
+						10101010 - 10111 = 10010011
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="lead"><br><strong>Adding using two's complement</strong>
+					<br>Adding in two complement is similar to that of normal binary numbers. However when adding large binary numbers we can encounter an interesting issue. If two large numbers are added with a value that exceeds the 8-bits then the overflow will result in a negative number.
+					<br>Take for example the addition of 103 + 115. In binary this would be 01100111 + 01110011 which would result in 11011010. However this binary number is represented in two's complement and as such returns a value of -38. 
+					<br>During addition, if the calculation were to result in a number that was too small to represent, then this would be called underflow.
+					<br><br><strong>Subtracting using two's complement</strong>
+					<br>Subtracting again is very similar again to ordinary binary subtracting, but with a twist.
+					<br>Take for example 7-1 in binary with binary values of 0111 and 0001 respectively. 
+					<br>Firstly we need to convert the 1 to its two's complement version. 
+					<br>This can be done with the simple process of using <em>one's complement</em>. This involves changing all the 1's to 0's and all the 0's to 1's then adding 1. 
+					<br>When we do this to 0001 we get 1111 which is equal to -8+4+2+1 = -1.
+					<br><br>Now we have 0111 and 1111 we add them together. 
+					<br>This makes the binary number 10110. This results in an overflow error. When working in two's complement, if we encounter an overflow, we discard the carried bit.
+					<br>The final binary number is therefore 0110 which equates to 6. 
+					<br>Below are some more examples of this:
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-responsive " style="margin: 12px" src="../img/2comp1.gif">
+				</div>
+				<div class="col-lg-4">
+					<img class="img-responsive " style="margin: 12px" src="../img/2comp2.gif">
+				</div>
+				<div class="col-lg-4">
+					<img class="img-responsive " style="margin: 12px" src="../img/2comp3.gif">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	
+<!-- Footer -->
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="text-center">
+						<h3>School Location</h3>
+						<p>North Halifax Grammar School<br>
+						Moorbottom Road<br>
+						Halifax<br>
+						HX2 9SU</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; Your Website 2016
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+		<a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+	</div><!-- jQuery -->
+	<script src="../vendor/jquery/jquery.min.js">
+	</script> <!-- Bootstrap Core JavaScript -->
+	 
+	<script src="../vendor/bootstrap/js/bootstrap.min.js">
+	</script> <!-- Plugin JavaScript -->
+	 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+	</script> <!-- Contact Form JavaScript -->
+	 
+	<script src="../js/jqBootstrapValidation.js">
+	</script> 
+	<script src="../js/contact_me.js">
+	</script> <!-- Theme JavaScript -->
+	 
+	<script src="../js/freelancer.min.js">
+	</script>
+</body>
+</html>
